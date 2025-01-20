@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es2015", // Or a specific ES target for production
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true, // For importing JSON files
+    "lib": ["es2015", "es2019"],
+    "types": ["@cloudflare/workers-types"],
+    "baseUrl": "./src",
+    "paths": { "*": ["*"] },
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "outDir": "./dist" // Output directory
+  },
+  "include": ["./src/**/*.ts", "facebook.ts"]
+}
